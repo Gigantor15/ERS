@@ -1,0 +1,20 @@
+@CHARSET "ISO-8859-1";
+/* External stylesheet 
+	Super duper reusable
+*/
+
+/* class selector: style multiple elements, but not all*/
+.hasBlue{
+	color: #0a02fc;
+	font-family: serif;
+	font-size: 15vh
+}
+.hasRed{
+	text-decoration: underline;
+	color: red;
+}
+
+/*ID selector: pick one element*/
+#cool{
+	text-decoration: overline;
+}
