@@ -7,7 +7,7 @@ public class ERS_USERS {
 	private String firstname;
 	private String lastname;
 	private String email;
-	private int roleId;
+	private ERS_USER_ROLES roleId;
 	
 	public int getId() {
 		return id;
@@ -45,14 +45,14 @@ public class ERS_USERS {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public int getRoleId() {
+	public ERS_USER_ROLES getRoleId() {
 		return roleId;
 	}
-	public void setRoleId(int roleId) {
+	public void setRoleId(ERS_USER_ROLES roleId) {
 		this.roleId = roleId;
 	}
 	public ERS_USERS(int id, String username, String password, String firstname, String lastname, String email,
-			int roleId) {
+			ERS_USER_ROLES roleId) {
 		super();
 		this.id = id;
 		this.username = username;
@@ -65,6 +65,7 @@ public class ERS_USERS {
 	public ERS_USERS() {
 		super();
 	}
+
 	@Override
 	public String toString() {
 		return "ERS_USERS [id=" + id + ", username=" + username + ", password=" + password + ", firstname=" + firstname

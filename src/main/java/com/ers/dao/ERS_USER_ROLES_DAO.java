@@ -11,8 +11,9 @@ public interface ERS_USER_ROLES_DAO {
 	public static final	String USER = "ers";
 	public static final 	String PASS = "ers";
 
-	//retrieve user roles by ID
-	public ERS_USER_ROLES getById(int roleId);
+	//public ERS_USER_ROLES getById(int roleId);
+	public List<ERS_USER_ROLES> queryAll() throws SQLException;
+
 	
 	public void close() throws SQLException;
 	

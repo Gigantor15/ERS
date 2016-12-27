@@ -1,40 +1,42 @@
 package com.ers.beans;
 
 import java.util.Date;
+import java.sql.Timestamp;
 
 public class ERS_REIMBURSEMENT {
 
 	private int id;
-	private int amount;
-	private Date submitted;
-	private Date resolved;
+	private double amount;
+	private Timestamp submitted;
+	private Timestamp resolved;
 	private String description;
 	private ERS_USERS author;
 	private ERS_USERS resolver;
 	private ERS_REIMBURSEMENT_STATUS statusId;
 	private ERS_REIMBURSEMENT_TYPE typeId;
+	
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getAmount() {
+	public double getAmount() {
 		return amount;
 	}
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
-	public Date getSubmitted() {
+	public Timestamp getSubmitted() {
 		return submitted;
 	}
-	public void setSubmitted(Date submitted) {
+	public void setSubmitted(Timestamp submitted) {
 		this.submitted = submitted;
 	}
-	public Date getResolved() {
+	public Timestamp getResolved() {
 		return resolved;
 	}
-	public void setResolved(Date resolved) {
+	public void setResolved(Timestamp resolved) {
 		this.resolved = resolved;
 	}
 	public String getDescription() {
@@ -67,7 +69,7 @@ public class ERS_REIMBURSEMENT {
 	public void setTypeId(ERS_REIMBURSEMENT_TYPE typeId) {
 		this.typeId = typeId;
 	}
-	public ERS_REIMBURSEMENT(int id, int amount, Date submitted, Date resolved, String description, ERS_USERS author,
+	public ERS_REIMBURSEMENT(int id, double amount, Timestamp submitted, Timestamp resolved, String description, ERS_USERS author,
 			ERS_USERS resolver, ERS_REIMBURSEMENT_STATUS statusId, ERS_REIMBURSEMENT_TYPE typeId) {
 		super();
 		this.id = id;
